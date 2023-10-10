@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            /*기본 여백(바깥, 안쪽, 옵션) : 제거*/
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h2 {
+            color: blue;
+        }
+        p {
+            /*기본크기는 16px = 1rem*/
+            font-size: 20px;
+            
+            /*현재 줄간격의 1.5배*/
+            line-height: 1.5;
+
+            /*좌우 균형을 맞춘 균등정렬*/
+            text-align: justify;
+
+            /*다른 이름 끼리 위쪽으로 띄울 때*/
+            margin-top: 50px;
+        }
+        div {
+            /*브라우저 넒이의 절반으로 줄이기*/
+            width: 50%;
+                    /* 위    오   아    왼 */
+            padding: 20px;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- a : 하이퍼링크 -> 페이지 이동하기-->
+        <!-- target="_blank"는 새창으로 띄움 -->
+        <a href="https://g-sa.koreaisacademy.com/" target="_blank"><h1>코리아IT아카데미에서는</h1></a>
+        <h2> 누구든지 IT전문가가 될 수 있습니다.</h2>
+
+        <!-- 
+        의미없는 문장을 만들어 내는 더미 텍스트
+        lorem단어수 + tab
+        ex) lorem50 -> 50단어 만들기
+        -->
+        <p>코리아IT아카데미는 최첨단 시설과 실무중심의 차별화된 교육프로그램을 중심으로 미래유망 직종인 빅데이터, 정보보안과 IT분야에 뛰어난 인재양성을 목표로 하는데 있습니다. 더불어 실무 현장에서 가장 필요로 하는 능력을 갖춘 인재를 양성, 체계적이고 세분화된 커리큘럼을 바탕으로 전문성을 갖춘 IT인재를 양성합니다. 그리고 바로 이점이 코리아IT아카데미의 선택해야 되는 이유입니다.</p>
+    </div>
+    
+</body>
+</html>
