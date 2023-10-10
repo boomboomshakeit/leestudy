@@ -1,0 +1,15 @@
+/*
+ * 1. 프로그램 명 : 정수 100으 출력하는 프로그램
+ * 2. 작성일 : 2023.09.07
+ * 3. 작성자 : 이태
+ */
+package tut00;
+
+public class Var {
+
+	public static void main(String[] args) {
+		int num = 100;
+		System.out.println(num);
+	}
+
+}

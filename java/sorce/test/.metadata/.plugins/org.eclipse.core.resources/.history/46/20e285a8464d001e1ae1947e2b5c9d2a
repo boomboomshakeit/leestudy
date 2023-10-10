@@ -1,0 +1,16 @@
+/*
+ *	프로그램명  두줄로 출려하는 프로그램 
+ *	작성일 : 2023.09.07
+ *	작성자 : 이태훈
+ */
+
+package tut00;
+
+public class Hello {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
