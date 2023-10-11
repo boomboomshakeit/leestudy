@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h, p 예제 2</title>
+    <!-- 외부라이브러리 : html 밖에서 가져온 것들 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+    <style>
+        #box1 {
+            background-color: red;
+        }
+
+        .box2 {
+            background-color: blue;
+        }
+
+        /* p:first-child {
+
+        }
+
+        p:last-child {
+
+        } */
+
+        /* p:nth-child(1) {
+
+        }
+
+        p:nth-child(2) {
+
+        } */
+
+        div {
+            width: 40%;
+            border: 1px solid rgb(0, 0, 0, 0.3);
+            padding: 8px;
+            margin: 20px;
+        }
+
+        span {
+            color: blue;
+        }
+
+        h2 {
+            font-family: 'Gothic A1', sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .clr01 {
+            color: red;
+        }
+
+        .clr02 {
+            color: blue;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.3;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        i {
+            color: tomato;
+        }
+
+        i:hover {
+            color:  red;
+            /* 색깔이 tomato -> red로 천천히 부드럽게 0.5s의 속도로 바뀌는 태그 */
+            transition: 0.8s;
+
+            /* 손가락 모양으로 만들어내는 태그 */
+            /* a태그는 무조건 마우스 포인터가 손가락 */
+            cursor: pointer;
+        }
+
+        button {
+            padding: 4px 12px;
+            border: 0;
+            background-color: green;
+            color: white;
+        }
+
+        button:hover {
+            transition: 0.8s;
+            background-color: rgb(0, 4, 0);
+            cursor: pointer;
+        }
+
+        img {
+            border-radius: 5px;
+        }
+
+        img:hover {
+            transform: rotate(180deg);
+            transition: 0.8s;
+        }
+     </style>
+</head>
+<body>
+    <!-- 구분자
+    id
+    class
+    tag 
+    -->
+    <!-- <div id="box1">a</div>
+    <div class="box2">b</div>
+    <p>문장1</p>
+    <p>문장2</p> -->
+    <div>
+        
+        <h2>
+            <i class="fa-solid fa-laptop"></i> 
+            <span class="clr01">코리아IT아카데미에서는</span> 
+            <br> 
+            <span class="clr02">누구든지 IT전문가가 될 수 있습니다.</span>
+        </h2>
+        <img src="../tut01/images/bill.jpg" alt="빌게이츠 사진입니다">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum alias culpa fugiat dolorem laboriosam, amet ex obcaecati quae, delectus ipsum dolore incidunt possimus cupiditate, labore unde doloremque et cum aliquam. Doloremque at placeat laudantium. Doloremque minus ex dignissimos illo enim tempora non possimus, eligendi, deserunt ipsam quam maxime quos et!
+            <a href="https://www.naver.com" target="_blank">
+                <button>GO, Naver</button>
+            </a>
+        </p>
+    </div>
+</body>
+</html>
