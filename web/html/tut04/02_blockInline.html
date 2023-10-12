@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록타입 & 인라인타입 예제</title>
+    <style>
+        span {
+            background-color: red;
+            display: inline-block;
+        }
+
+        p {
+            background-color: blue;
+        }
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        p {
+            width: 200px;
+            height: 150px;
+            background-color: tomato;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- float, flex : block -> inline
+    블록 : 나머지는 block - 해상도 상관없이 무조건 100% 넓이를 가짐
+    인라인 : a, span, img, table.... : 내용물만큼 넓이가 만들어짐-->
+
+    <span>메뉴1</span>
+    <span>메뉴2</span>
+    <span>메뉴3</span>
+    <span>메뉴4</span>
+
+    <div class="nav">
+        <p>메뉴1</p>
+        <p>메뉴2</p>
+        <p>메뉴3</p>
+        <p>메뉴4</p>
+    </div>
+
+    
+    <a href="">메뉴1</a>
+    <a href="">메뉴2</a>
+    <a href="">메뉴3</a>
+    <a href="">메뉴4</a>
+</body>
+</html>
