@@ -1,9 +1,9 @@
 package thread;
 
-class NumCount2 implements Runnable {
+class NumCount2 implements Runnable { //Runnable 인터페이스를 구현하는 클래스 정의
 
 	@Override
-	public void run() {
+	public void run() { //run()메소드 오버라이드 및 스레드 코드 작성
 		int[] intArr = new int[] {1, 2, 3, 4, 5};
 		
 		for(int i = 0; i < intArr.length; i++) {
@@ -18,10 +18,10 @@ class NumCount2 implements Runnable {
 	
 }
 
-class HanCount2 implements Runnable {
+class HanCount2 implements Runnable { //Runnable 인터페이스를 구현하는 클래스 정의
 
 	@Override
-	public void run() {
+	public void run() { //run()메소드 오버라이드 및 스레드 코드 작성
 		
 		try {
 			Thread.sleep(10);
@@ -47,15 +47,15 @@ public class ThreadEx3 {
 
 	public static void main(String[] args) {
 		
-		NumCount2 nc2 = new NumCount2();
+		NumCount2 nc2 = new NumCount2(); //Runnable 객체 생성
 		//Thread 객체에 주입해서 사용
-		Thread t1 = new Thread(nc2);
-		t1.start();
+		Thread t1 = new Thread(nc2); // Runnable 인터페이스를 구현하는 방법
+		t1.start(); // 스레드의 실행
 		
-		HanCount2 hc2 = new HanCount2();
+		HanCount2 hc2 = new HanCount2(); //Runnable 객체 생성
 		//Thread 객체에 주입해서 사용
-		Thread t2 = new Thread(hc2);
-		t2.start();
+		Thread t2 = new Thread(hc2); // Runnable 인터페이스를 구현하는 방법
+		t2.start(); // 스레드의 실행
 		
 		
 	}
