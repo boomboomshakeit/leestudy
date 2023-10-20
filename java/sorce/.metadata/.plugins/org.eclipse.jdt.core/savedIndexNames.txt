@@ -17,7 +17,6 @@ INDEX VERSION 1.134+/Users/lth069389/Desktop/leetae/study/java/sorce/.metadata/.
 3291512470.index
 392105321.index
 2451866030.index
-2286765230.index
 4283069496.index
 187551764.index
 596136849.index
