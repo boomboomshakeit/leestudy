@@ -1,0 +1,16 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eee;
+}
+
+ul li {
+    list-style: none; /*li 옆에 점 없애는거*/
+}
