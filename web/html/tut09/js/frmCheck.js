@@ -1,5 +1,5 @@
  //객체로 만드는것
- let userid = document.querySelector(".userid");
+ let userid = document.querySelector(".userid"); //이해완
  let passwd = document.querySelector(".passwd");
  let button = document.querySelector("button");
 

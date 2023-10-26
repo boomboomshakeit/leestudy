@@ -4,10 +4,10 @@
     width: 350px;
     background-color: #fff;
     
-    position: absolute;
+    position: absolute;/*화면 절대위치*/
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /*화면 비 맞춰주는거*/
     box-shadow: 0 0 3px 1px #ccc;
 
     padding: 50px 30px; /*여백주는거*/
@@ -15,7 +15,7 @@
 }
 
 h1 {
-    text-align: center;
+    text-align: center; /*글자 가운데 위치 시킴*/
     margin-bottom: 30px;
 }
 
