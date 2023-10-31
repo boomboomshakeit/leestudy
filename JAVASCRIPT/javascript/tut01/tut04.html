@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        header {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    
+    <header>코리아아이티</header>
+    <button class="btn1">OnClick</button>
+    <button class="btn2">AddEvent</button>
+
+    <script>
+        let header = document.querySelector("header");
+        // let btn1 = document.querySelector(".btn1");
+        
+        // function clrChange() {
+        //     header.style.backgroundColor = "red";
+        // }
+
+        // btn1.onclick = clrChange;
+
+        let btn1 = document.querySelector(".btn1");
+        let btn2 = document.querySelector(".btn2");
+        function clrChange() {
+            header.style.backgroundColor = "red";
+        }
+
+        btn1.onclick = clrChange;
+
+        function boldChnage() {
+            header.style.fontWeight = "bold";
+            header.style.fontSize = "50px"; 
+        }
+
+        //이벤트 명시
+        btn2.addEventListener('click', boldChnage);
+
+    </script>
+</body>
+</html>
