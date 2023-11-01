@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .box {
+            width: 200px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <img src="./images/Bill-Gates-2011.jpg" alt="빌게이츠">
+    </div>
+    <button>이미지바꾸기</button>
+
+    <script>
+        let img = document.querySelector(".box img");
+        // console.log(img.src);
+        let btn = document.querySelector("button");
+
+        function changeImg() {
+            // alert("ok");
+            // console.log(img.src);
+            img.src = "./images/다운로드.jpg";
+        }
+        btn.onclick = changeImg;
+    </script>
+</body>
+</html>

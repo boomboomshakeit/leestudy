@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerText, innerHtml, textContent</title>
+</head>
+<body>
+    <div id="info">
+        <br>
+        <p class="company">회사명 : 코리아아이티 아카데미</p>
+        <p class="address">주소 : 부산광역시</p>
+        <p class="tel">전화번호 : 051-123-4567</p>
+        <br>
+        <button class="btn1">회사명 변경하기</button>
+        <button class="btn2">숨겨진 주소 보이기</button>
+
+    </div>
+    <script>
+        /*
+        //텍스트 가져오기 cf) <br/> x
+        let com = document.querySelector("#info .company");
+        console.log(com.innerText);
+        console.log("--------------------");
+
+        //HTML 코드로 가져오기
+        let info = document.querySelector("#info");
+        console.log(info.innerHTML);
+        
+        //textContent
+        console.log(info.textContent);
+        */
+
+        let btn1 = document.querySelector(".btn1");
+        
+        function textChange() {
+            // alert("ok");
+            let str = "company : Koreait IT Academy";
+            // document.querySelector("#info .company").innerText = str;
+            document.querySelector("#info .company").innerHTML = "<strong><em>" + str +  "</em></strong>";
+        }
+
+        function hide(e) {
+            //<input type='submit' value="로그인">
+            //<button type='submit'>로그인</button>
+            e.preventDefault();
+            // alert("ok");
+            document.querySelector("#info").style.display = "none";
+        }
+
+        document.querySelector(".btn2").addEventListener('click', hide);
+
+        btn1.addEventListener('click', textChange);
+
+        
+
+    </script>
+</body>
+</html>

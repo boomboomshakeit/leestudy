@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        p {
+            /* 숨기기 */
+            /* display: none; 여백이 남아있지 않고 글지도 안보이게함*/
+            /* visibility: hidden; 여백이 남아있고 글자만 안보이게함 */
+            /* display: block; 보이게하는 법 */
+        }
+    </style>
+</head>
+<body>
+    <h1>코리아아이티</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, quos?</p>
+    <button class="hide">Hide</button>
+    <button class="show">show</button>
+
+    <script>
+        //개채
+        
+        let pr = document.querySelector("p");
+        let btn1 = document.querySelector(".hide");
+        let btn2 = document.querySelector(".show");
+        /*
+        function hide() {
+            pr.style.display = "none";
+        }
+
+        btn1.onclick = hide;
+
+        function show() {
+            pr.style.display = "block";
+        }
+
+        btn2.onclick = show;
+        */
+
+        function hide() {
+            pr.style.display = "none";
+        }
+
+        btn1.addEventListener('click', hide);
+    </script>
+</body>
+</html>

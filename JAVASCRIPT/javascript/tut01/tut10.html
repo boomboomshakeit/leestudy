@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList.Toggle("클래스명")</title>
+    <style>
+        .hide {
+            /* display: none; */
+            visibility: hidden;
+        }
+
+        img {
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/다운로드.jpg" alt="빌리아일리시">
+    </div>
+    <button>Toggle 예제(버튼하나로 show/hide)</button>
+
+    <script>
+
+        function toggleImg() {
+            document.querySelector(".box img").classList.toggle("hide");
+        }
+
+        document.querySelector("button").onclick = toggleImg;
+    </script>
+</body>
+</html>
