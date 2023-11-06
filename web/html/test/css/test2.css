@@ -17,6 +17,7 @@ body {
 
 .header-container {
     width: 100%;
+    
 
 }
 
@@ -32,8 +33,10 @@ body {
 
 nav {
     background-color: rgb(19, 21, 23);
+    height: 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center ;
 }
 
 nav ul {
@@ -66,4 +69,32 @@ nav ul li a:hover {
     height: 500px;
 }
 
+.search {
+    width: 60%;
+}
 
+.submain {
+    background-color: #ccc;
+    color: rgb(182, 118, 74);
+    font-size: 40px;
+    width: 100%;
+    height: 350px;
+    display: flex;
+    padding: 0 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img2 {
+    height: 300px;
+    border: 4px solid rgb(182, 118, 74);
+    
+    
+}
+
+.footer {
+    background-color: rgb(19, 21, 23);
+    width: 100%;
+    height: 100px;
+    justify-content: end;
+}
