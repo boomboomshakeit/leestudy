@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>BackEnd Programming</h1>
+    <p>HTML/CSS/JS</p>
+    <p>Spring Boot</p>
+    
+    <button>제목 제거</button>
+    <!-- <p>Database</p> -->
+    <script>
+        // document.querySelectorAll() : 같은 배열 태그를 배열
+        
+        let basicTag = document.querySelectorAll("p")[0];
+
+        let addTag = document.createElement("p");
+        let addText = document.createTextNode("Database");
+        addTag.appendChild(addText);
+        // document.body.appendChild(addTag);
+
+        document.body.insertBefore(addTag, basicTag);
+
+        //제목제거
+        document.addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector("h1").remove();
+        });
+
+    </script>
+</body>
+</html>
