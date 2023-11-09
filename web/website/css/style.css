@@ -18,13 +18,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth; /*스크롤할때 어떻게 움직이는지*/
+}
+
 ul li {
     list-style: none;
 }
 
 img {
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -91,6 +94,7 @@ header {
 }
 
 .section_container {
+    width: 100%;
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
@@ -134,3 +138,110 @@ header {
     background-color: #5681a7;
     cursor: pointer;
 }
+
+/* ----------------- journy -------------------------*/
+
+section.one {
+    background-color: #e8f1fa;
+    padding: 30px 0;
+}
+
+.journey_container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.country_box {
+
+    box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    /* transition: all .3s ease-in-out; */
+}
+
+.journey_title h2 {
+    font-size: 32px;
+    color: #669ccb;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.journey_title p {
+    font-size: 16px;
+    color: #669ccb;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.journey_content {
+    display: grid; /*격자무늬*/
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+/* .country_box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+} */
+
+.country_name {
+    padding: 1rem;
+    display: flex;
+    color: #767268;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.country_name i {
+    /* 19.2 */
+    font-size: 1.2rem;
+    margin-right: 4px;
+}
+
+.country_name span {
+    font-style: italic;
+}
+
+.active {
+    transition: var(--transition);
+}
+
+/* ----------------- anchor -------------------------*/
+
+.go-up {
+    width: 35px;
+    height: 35px;
+    background-color: #3b79c9;
+    color: var(--white);
+    font-size: 1.125rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /*안보이다 보이게함*/
+    transition: var(--transition);
+}
+
+.view {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
