@@ -206,6 +206,152 @@ section.one {
     transition: var(--transition);
 }
 
+/* ----------------- two -------------------------*/
+
+.two {
+    background-image: linear-gradient(rgba(45, 92, 132, 0.5), rgba(45, 92, 132, 0.3)), url('../images/bg-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.discount_container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 400px;
+}
+
+.discount_content {
+    width: 60%;
+    text-align: right;
+}
+
+.discount_content h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    color: var(--white);
+}
+
+.discount_content p {
+    line-height: 1.3;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 30px;
+}
+
+.discount_content button {
+    padding: 0.5rem 2rem;
+    outline: none;
+    border: 2px solid #e8f1fa;
+    background-color: transparent;
+    color: #e8f1fa;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ----------------- three -------------------------*/
+
+.three {
+    background-color: #e8f1fa;
+    padding: 30px 0;
+
+}
+
+.display_container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+.display_box {
+    background-color: white;
+    box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    /* transition: all .3s ease-in-out; */
+    text-align: center; /*가운데 정렬*/
+}
+
+.display_box i {
+    font-size: 2rem;
+    color: #669ccb;
+}
+
+.display_box h4 {
+    font-size: 2.5rem;
+}
+
+.display_box p {
+    font-size: 1rem;
+}
+
+
+.display_title h2 {
+    font-size: 32px;
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.display_title p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.display_content {
+    display: grid; /*격자무늬*/
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+
+}
+
+/* ----------------- footer -------------------------*/
+
+footer {
+    background-color: #282d31;
+    color: #e8f1fa;
+    padding: 30px 0;
+
+}
+
+
+.footer_container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+footer .social_icons {
+    display: flex;
+    justify-content: center;
+
+    margin: 30px 0;
+    /* flex, grid 사이 여백 줄때 */
+    gap: 1rem;
+}  
+
+footer .social_icons i {
+    padding: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+footer p {
+    font-style: italic;
+}
+
 /* ----------------- anchor -------------------------*/
 
 .go-up {
@@ -229,6 +375,64 @@ section.one {
 
 .view {
     opacity: 1;
+}
+
+@media(max-width: 600px) {
+
+    /* ----------------- nav -------------------------*/
+
+    .nav_links {
+        display: none;
+    }
+
+    /* ----------------- header -------------------------*/
+    .header_content {
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* ----------------- journy -------------------------*/
+
+    .journey_content {
+        grid-template-columns: repeat(2, 1f);
+        padding: 0 20px;
+    }
+
+    /* ----------------- two -------------------------*/
+    .discount_container {
+        justify-content: center;
+    }
+    
+    .discount_content {
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    /* ----------------- three -------------------------*/
+    .discount_content {
+        padding: 0 20px;
+    }
+
+    .display_box h4 {
+        font-size: 1.5rem;
+    }
+
+    .display_box p {
+        font-size: 0.75rem;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    .bars i {
+        color: #fff;
+
+    }
+
+   
 }
 
 
